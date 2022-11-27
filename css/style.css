@@ -1,0 +1,87 @@
+:root{
+    --fundo-princiapl: #FFFFFF;
+    --fundo-rodape: #F9FAFB;
+    --vermelho-escuro: #8E2424;
+    --titulo-logo: #3A404E;
+    --titulo-secundario: #101828;
+    --texto-links: #667085;
+}
+
+body{
+    background-color: var(--fundo-princiapl);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* Cabeçalho*/
+
+.container{
+    margin: 1em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.titulo__logo-nav{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--titulo-logo);
+    margin-left: .5em;
+ 
+}
+
+.item__lista-nav--link{
+    font-weight: 500;
+    color: var(--texto-links);
+    margin-right: 2em;
+}
+
+.opcoes__link-entrar{
+    padding: 0 1em;
+    font-weight: 500;
+}
+
+.opcoes__link-cadastrar{
+    padding: .5em 1em;
+    font-weight: 500;
+    background-color: var(--vermelho-escuro);
+    color: var(--fundo-princiapl);
+    border-radius: 6px;
+}
+
+.opcoes__link-cadastrar:hover{
+    font-size: 17px;
+    transition: .5s;
+}
+
+/***********************************************************************************/
+
+/* Corpo do site*/
+
+.container-banner{
+    margin: 8em 5em;
+    text-align: center;
+}
+
+.titulo-pequeno__banner{
+    font-weight: 600;
+    color: var(--vermelho-escuro);
+}
+
+.tituto-grande__banner{
+    font-size: 48px;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+.paragrafo__banner{
+    font-size: 20px;
+    padding: 0 10vw;
+}
