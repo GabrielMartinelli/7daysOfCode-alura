@@ -5,6 +5,7 @@
     --titulo-logo: #3A404E;
     --titulo-secundario: #101828;
     --texto-links: #667085;
+    --cinza-claro: #98A2B3;
 }
 
 body{
@@ -12,7 +13,6 @@ body{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    margin-left: 4em;
 }
 
 
@@ -22,7 +22,7 @@ body{
     margin: 1em 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .logo-titulo{
@@ -35,8 +35,8 @@ body{
     font-weight: 500;
     color: var(--titulo-logo);
     margin-left: .5em;
- 
 }
+
 
 .item__lista-nav--link{
     font-weight: 500;
@@ -44,9 +44,18 @@ body{
     margin-right: 2em;
 }
 
+.item__lista-nav--link:hover{
+    color: var(--vermelho-escuro);
+}
+
 .opcoes__link-entrar{
     padding: 0 1em;
     font-weight: 500;
+    text-decoration: none;
+}
+
+.opcoes__link-entrar:hover{
+    color: var(--vermelho-escuro);
 }
 
 .opcoes__link-cadastrar{
@@ -55,6 +64,7 @@ body{
     background-color: var(--vermelho-escuro);
     color: var(--fundo-princiapl);
     border-radius: 6px;
+    text-decoration: none;
 }
 
 .opcoes__link-cadastrar:hover{
@@ -67,7 +77,7 @@ body{
 /* Corpo do site*/
 
 .container-banner{
-    margin: 8em 0;
+    margin: 8em 4em;
     text-align: center;
 }
 
@@ -91,13 +101,8 @@ body{
 
 .container-metricas{
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 10em;
-}
-
-.metricas{
-    margin: 0 2em;
-    
+    justify-content: space-around;
+    margin: 0 4em 10em 4em;
 }
 
 .numero-metrica{
@@ -118,8 +123,7 @@ body{
 }
 
 .container-vagas{
-    margin: 4em 4em 4em 0;
-
+    margin: 4em;
 }
 
 .anuncio__vagas{
@@ -194,4 +198,89 @@ body{
 .salario__vagas{
     font-weight: 500;
     color: var(--texto-links);
+}
+
+.opiniao__desenvolvedor{
+    text-align: center;
+    background: rgba(196, 25, 25, 0.03);
+    padding: 3em 0;
+    border-radius: 16px;
+    margin: 0 4em 5em 4em;
+}
+
+.titulo__opiniao-desenvolvedor{
+    color: var(--vermelho-escuro);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.texto__opiniao-desenvolvedor{
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--titulo-secundario);
+    margin: 1em 0;
+
+}
+
+.nome__desenvolvedor{
+    font-weight: 500;
+    margin: 1em 0;
+    color: var(--titulo-secundario);
+}
+
+.funcao__desenvolvedor{
+    font-size: 14px;
+    color: var(--texto-links);
+}
+
+.rodape{
+    background-color: var(--fundo-rodape);
+    text-align: center;
+    padding: 3em 0;
+    margin: 0;
+}
+
+.titulo__rodape{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--titulo-secundario);
+}
+
+.subtitulo__rodape{
+    margin: 2em 0;
+    font-size: 20px;
+    color: var(--texto-links);
+}
+
+.email__rodape{
+    border: solid 1px var(--cinza-claro);
+    border-radius: 4px;
+    margin-right: 2em;
+    padding: .4em;
+    width: 20%;
+}
+
+.email__rodape::placeholder{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.botao__rodape{
+    font-weight: 500;
+    background-color: var(--vermelho-escuro);
+    border-radius: 4px;
+    padding: .4em;
+    color: var(--fundo-princiapl);
+}
+
+.botao__rodape:hover{
+    font-size: 18px;
+    transition: .5s;
+}
+
+.rodape__texto{
+    margin: 2em 0 3em 0;
+    color: var(--cinza-claro);
 }
